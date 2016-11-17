@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/jaejoong/demoday/purdueSC/www/lib/lodash/vendor/backbone/test/setup/environment.js",
+        "/Users/jaejoong/demoday/purdueSC/www/lib/lodash/vendor/backbone/test/sync.js",
+        "/Users/jaejoong/demoday/purdueSC/www/lib/lodash/vendor/backbone/test/view.js",
+        "/Users/jaejoong/demoday/purdueSC/www/lib/lodash/vendor/firebug-lite/src/firebug-lite-debug.js"
+    ]
+}

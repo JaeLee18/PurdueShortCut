@@ -1,0 +1,15 @@
+<ion-view title ="<div id='navi'><a class = 'button icon ion-navigate'> </a></div>" >
+  		<ion-content ng-controller="toMapCtrl">	
+  			<map center="{{list.latitude}},{{list.longtitude}}" zoom="14">
+  			<marker position="{{[list.latitude, list.longtitude]}}">
+  	</ion-content>
+  	<div></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+<button class="button button-full button-positive" ng-click="getDirections()">
+  <font size = 10>Navigate!</font>
+</button>
+
+</br>
+<h1>Destination: {{desti}}</h1>
+  	</div>
+</ion-view >

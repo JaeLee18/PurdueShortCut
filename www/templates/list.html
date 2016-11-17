@@ -1,0 +1,31 @@
+<ion-view view-title="List">
+  <ion-content>   
+   <!-- Search Input Control -->
+		<div class="bar bar-header item-input-inset" >
+			<label class="item-input-wrapper" >
+				<i class="icon ion-ios-search placeholder-icon" ></i >
+				<input type="search"
+				       ng-model="search.name"
+				       placeholder="Enter your destination" >
+			</label >
+		</div >
+
+
+
+	<!-- Show List -->
+		<ion-list >
+			<ion-item ng-repeat="list in filteredLists = (listService.lists | filter:search )"
+			          ui-sref="app.toMap({'listId':list.listid})" >
+				<h2 >{{list.name}}</h2 >
+
+			</ion-item >
+
+			<!-- No Results Found Message -->
+			<div ng-show="filteredLists.length == 0" >
+				<p class="text-center" >We cannot find '{{search.name}}' in our database.</p >
+			</div >
+
+
+		</ion-list >
+  </ion-content>
+</ion-view>
